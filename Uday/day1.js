@@ -165,3 +165,85 @@ console.log(arr)
 
 
 // 3. arry.concat
+
+var x = [1, 2, 3]
+var y = [40, 30]
+console.log(x.concat('uday', 'rahul', y))
+
+
+// so from above example we can say that array.concat() creates a new array
+// in that new array we can pass the argument or we can insert another array
+
+//4. array.findIndex()
+
+//The findIndex() method is used to find the index of the first element in an array for which we have given a condition to it
+// suppose we have an array of length 6 and we put a condition that if the element is greater than 15 then print that
+// if it find the element at index of 3 so it will not check with other element present in the array
+// if the conditon is not fullfilled then it will return -1
+// for example
+
+var nums = [10, 51, 70, 80, 10, 70];
+var k = nums.findIndex(function(test) {
+    return test == 70
+});
+console.log(k);
+
+//output will be 2
+
+
+
+//5. sort 
+// in this method of array.sort() we can sort our array in a particular manner
+// for example we have an array with the elemnent of strings and when we use
+// array.sort() will re-arrange the array alphabatically
+
+// if we have an array consist of an element with numeric value then
+// it will sort that array in assending order
+
+
+// if we have an array mix with the number and string then sort method will
+// re-arrange the array first it will do numerically and then alphabatically
+
+var array1 = [5, 6, 7, 3, 8, 1]
+console.log(array1.sort())
+
+var array2 = ['uday', 'rahul', 'bharat', 'aman']
+console.log(array2.sort())
+
+
+var array3 = [5, 6, 7, 'aman', 'rahul']
+console.log(array3.sort())
+
+
+
+
+//6. reverse
+
+// this array.reverse() method is used to reverse the whole array
+
+var array4 = ['uday', 'kumar', 'rahul', 'aman']
+console.log(array4.reverse())
+    //output will be [ 'aman', 'rahul', 'kumar', 'uday' ]
+
+
+//7. split
+// split is used to form a new array from a given specific argument
+//like in the given example we have a string called names and when we use the split method
+// and pass the argument that we want to split it between space so it will split that string into array
+
+let names = 'uday kumar singh';
+
+console.log(names.split(' '))
+
+//output [ 'uday', 'kumar', 'singh' ]
+
+
+//8. join
+
+// this method is used to convert an array into string
+//for example:-
+
+var array5 = ['uday', 'rahul', 'aman']
+console.log(array5.join(', '))
+
+// output will be uday, rahul, aman
