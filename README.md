@@ -14,4 +14,14 @@
  https://javascript.info/array-methods
 
 
-    
+# Day 2
+
+4) What is JSON and its common operations 
+5) What is Hoisting , explaining about var hoisting with examples
+6) What is the main difference between localStorage and sessionStorage
+7) What is the difference between null and undefined
+8) What is the difference between an attribute and a property ? give examples
+9) What are events and its types
+10) How do you combine two or more arrays
+11) What happens if we add two arrays? show with examples
+12) Difference between alert and prompt ? 
