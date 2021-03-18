@@ -64,13 +64,30 @@ for eg :
     var arr = str.join(",")
     console.log(arr) // Mohit,Kapil,Vishal
 
+
+
+    Sort is used to arrange the data in ascending or descending order.
+    for eg :
+    var arr = [43,54,123,14234,56,2342,78,1,44]
+    var sorted = arr.sort((a,b) => b - a) // arranging in descending order
+    console.log(sorted) // [14234,2342,123,78,56,54,44,43,1]
+
+
+    findIndex is used to find the index of the element in the given array.
+    for eg :
+    var arr = [43,54,123,14234,56,2342,78,1,44]
+    var index = arr.findIndex((el) => el == 44)
+    console.log(index) // output = 8
+
+
+
+    Concat is used to join two or more arrays into one.
+    for eg :
+    var arr1 = [1,2,3,4]
+    var arr2 = [5,6,7,8]
+    var concatArr =  arr1.concat(arr2,[9,10])
+    console.log(concatArr) // [1,2,3,4,5,6,7,8,9,10]
+
+
+
  */
-
-//  var arr = ["a",2,3,4,5,6]
-//  var index = arr.find(item => item==1)
-//  console.log(index)
-
-
- var str = ["Mohit","Kapil","Vishal"]
- var arr = str.join(",")
- console.log(arr)
