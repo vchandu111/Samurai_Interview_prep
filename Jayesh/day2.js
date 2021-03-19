@@ -102,6 +102,8 @@ console.log(a)
 // ---> Atrribute is defined by HTML .it acesss the propety of html.
 //       there are two type of attribute type and its value
 //       Example
+//    <input id="inp" type="text" value="Name:">
 
 
-    <input>
+
+
