@@ -105,5 +105,46 @@ console.log(a)
 //    <input id="inp" type="text" value="Name:">
 
 
+// Question-5
+// // What are events and its types
+// ---->event are  use in html it show the action when perform respective action when perform operation
+//      e.g   suppose write the function in this function click the on button it shows red color so mouse click is event
+// type of event
+//  ---- Keyboard event
+//  ----mouse event
+//  -----user inteferance event
+//  -----Html events
+// ------css event
 
 
+
+// Question-6
+// How do you combine two or more arrays
+// --->   foe combining two or more array used spread operator
+
+// e.g
+
+var a=[1,2,3,4];
+var b=[4,5,6,7];
+var c=[8,9]
+
+var combine=[...a,...b,...c]
+// output is [1,2,3,4,5,6,7,8,9]
+
+
+
+// Question-7
+// // What happens if we add two arrays? show with examples
+// ---> when combine two array the lenghth of the array is change means it increase and it is 
+//     equal to length of array 1 and length of array 2
+
+var a=[1,2,3];
+var b=[4,5,6]
+var add=[...a,...b];
+console.log(add)
+// output is [1,2,3,4,5,6]
+
+
+// Question-8
+// // Difference between alert and prompt ?
+// --->An alert is a popup that has a notice within it. A prompt has an input field and expects the user to interact with it by entering some data
