@@ -4,7 +4,7 @@
 //       example->    In javascript --  string, boolen, Number, Undefined, null
 var nam = 'pawan'
 console.log(nam) //string
-
+// Terminal -- 
 var num1 = 5
 var num2 = 6
 var num =  num1+num2;
