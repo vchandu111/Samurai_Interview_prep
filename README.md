@@ -25,3 +25,60 @@
 10) How do you combine two or more arrays
 11) What happens if we add two arrays? show with examples
 12) Difference between alert and prompt ? 
+
+
+# Day 3
+1) What are the different ways to access object properties
+2) What is Hoisting
+3) What is scope in javascript
+4) What is the purpose of the let keyword
+5)  What's the output?
+```javascript
+function sayHi() {
+  console.log(name);
+  console.log(age);
+  var name = 'Lydia';
+  let age = 21;
+}
+
+sayHi();
+
+A: Lydia and undefined
+B: Lydia and ReferenceError
+C: ReferenceError and 21
+D: undefined and ReferenceError
+```
+7) 7. What's the output?
+```javascript
+let a = 3;
+let b = new Number(3);
+let c = 3;
+
+console.log(a == b);
+console.log(a === b);
+console.log(b === c);
+
+A: true false true
+B: false false true
+C: true false false
+D: false true true
+```
+8) 
+What's the output?
+```javascript
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const member = new Person('Lydia', 'Hallie');
+Person.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+console.log(member.getFullName());
+
+A: TypeError
+B: SyntaxError
+C: Lydia Hallie
+D: undefined undefined
