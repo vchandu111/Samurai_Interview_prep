@@ -48,7 +48,7 @@ B: Lydia and ReferenceError
 C: ReferenceError and 21
 D: undefined and ReferenceError
 ```
-7) 7. What's the output?
+7) What's the output?
 ```javascript
 let a = 3;
 let b = new Number(3);
@@ -63,8 +63,7 @@ B: false false true
 C: true false false
 D: false true true
 ```
-8) 
-What's the output?
+8) What's the output?
 ```javascript
 function Person(firstName, lastName) {
   this.firstName = firstName;
