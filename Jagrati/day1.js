@@ -158,6 +158,9 @@ means we can reassign the values in premitive data types but we can not change t
 Question3.  Array methods - slice,splice,concat,findindex,sort,reverse,split,join.
 
 1.SLICE:-its task is to copy the any given array from any start index to end index..whatever index we define in it parameter.
+it will not print last index element.
+to print the last index value we have to give the end value as by increasing it by 1.
+means if last index is 4 then we have to give end value as 5 to print the last element.
 
 syntax:- arrayName.slice((startIndex, endIndex))
 let arr1 = ["a","b",1,2,3]
@@ -168,7 +171,7 @@ console.log(arr1.slice(0,5)) // a,b,1,2,3
 
 console.log(arr1.slice(-3)) // 1,2,3
 
-2.SPLICE:- by using splice we can delete any element from array,can add any element to the arrya and it allows negative values inside it which means that perform the task from the end.
+2.SPLICE:- by using splice we can delete any element from array,can add any element to the arry and it allows negative values inside it which means that perform the task from the end.
 
 let arr2 = [1,2,3,4,5]
 arr2.splice(1,2)
@@ -191,8 +194,110 @@ let arr = [1,2,3,4]
 
 console.log(arr.concat([5],[6,7]))
 
-4.findindex:- 
- */
+4.findindex:- it simply check the test cases which we define in the function and return the first index of element from the array which satisfy the test cases or condition defined in function.
+it allows function as a parameter.
+if there is no any element which passess the test cases or condition then it will give output as a -1
+example:-
 let arr = [1,2,3,4]
+ function eq3(el) {
+    return el == 3
+ }
 
-console.log(arr.concat([5],[6,7]))
+ console.log(arr.findIndex(eq3)) // it will give output as 2
+
+
+let arr = [1,2,3,4]
+ function grtr4(el) {
+    return el > 5
+ }
+
+ console.log(arr.findIndex(grtr4)) // -1
+
+ 5.SORT:- it will return the array by arranging them alphabatically.
+ it works on array of numbers,character,words.
+ example:-
+let arr = [4,3,6,7,1,2]
+
+let arr1 = ["h","b","c"]
+
+let arr2 = ["jiny", "harry", "ron"]
+
+let arr3 = arr.concat(arr1,arr2)
+console.log(arr1.sort()) // [ 'b', 'c', 'h' ]
+console.log(arr.sort()) // [ 1, 2, 3, 4, 6, 7 ]
+console.log(arr2.sort()) // [ 'harry', 'jiny', 'ron' ]
+console.log(arr3) // [ 4, 3, 6, 7, 1, 2, 'h', 'b', 'c', 'jiny', 'harry', 'ron' ]
+console.log(arr3.sort()) // [ 1, 2, 3, 4, 6, 7, 'b', 'c', 'h', 'harry', 'jiny', 'ron' ]
+
+
+6.REVERSE:- it returns the array in decreasing order or in reverse order from last index to initial index.
+example:-
+let arr = [1,2,3,4,5];
+ console.log(arr.reverse()) // [ 5, 4, 3, 2, 1 ]
+
+ let arr = ["a","k","l","b"];
+ console.log(arr.reverse()) // [ 'b', 'l', 'k', 'a' ]
+
+ let arr = [6,98,0,4,2];
+ console.log(arr.reverse()) // [ 2, 4, 0, 98, 6 ]
+
+ 7. SPLIT:- split method basically splits the string and return the array or substring according to whatever parameter we give inside this method.
+ examples:-
+var str = "today is thursday."
+
+ console.log(str.split()) // [ 'today is thursday.' ]
+ when we use only split() then it return the string in '' as an array
+
+ var str = "today is thursday."
+
+console.log(str.split("")) // [ 't',
+  'o',
+  'd',
+  'a',
+  'y',
+  ' ',
+  'i',
+  's',
+  ' ',
+  't',
+  'h',
+  'u',
+  'r',
+  's',
+  'd',
+  'a',
+  'y',
+  '.' ] // when we use split("") it return each character of string seperated by comma in a array.
+
+
+  var str = "today is thursday."
+
+console.log(str.split(" ")) // [ 'today', 'is', 'thursday.' ]
+it return each word of the string.
+
+
+var str = "today is thursday."
+
+console.log(str.split("a")) // [ 'tod', 'y is thursd', 'y.' ]
+
+var str = "today is thursday."
+
+console.log(str.split(" ", 2)) // [ 'today', 'is' ]
+
+8. JOIN:-   it returns an array as a string means it joins all the elements of the array and return them as one single line or as a string.
+if i use anything inside parameter of this method,it joins all the element of the array by the given parameter.
+example:-
+
+var arr = ["samurai", "batch", "in", "masai", "school"]
+console.log(arr.join()) // samurai,batch,in,masai,school
+
+var arr = ["samurai", "batch", "in", "masai", "school"]
+console.log(arr.join(".")) // samurai.batch.in.masai.school
+
+
+var arr = ["samurai", "batch", "in", "masai", "school"]
+console.log(arr.join(" ")) // samurai batch in masai school
+
+var arr = ["samurai", "batch", "in", "masai", "school"]
+console.log(arr.join("$")) // samurai$batch$in$masai$school
+ */
