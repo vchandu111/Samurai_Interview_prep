@@ -109,13 +109,13 @@ let con5 = [true, false, null];
 
 console.log(con3.concat(con4, con5)); // [1, 2, 3, "one", "two", "three", true, false, null]
 
-//d.findIndex:not completed
+//d.findIndex:The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test.
 
-// let arr4 = ["one", "two", "three", "four"];
+let arr4 = [100, 150, 90, 120, 15, 25];
 
-// let res = arr4.findIndex();
+let res = (el) => el > 125;
 
-console.log(res);
+console.log(arr4.findIndex(res)); // 0-99 = 0, 100-149 = 1 150 and above = -1
 
 //e. sort : sort methods is mainly used for sorting an elements in an array it is maingly in the form of alphabetical order and sequence of fist number
 
