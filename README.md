@@ -81,3 +81,12 @@ A: TypeError
 B: SyntaxError
 C: Lydia Hallie
 D: undefined undefined
+
+# Day 4
+
+1) What is the difference between Call, Apply and Bind with examples
+2) What is JSON and its common operations 
+3) What are the methods available on session storage
+4) What is the difference between == and === operators
+5) What is a promise , Why do you need a promise , What are the three states of promise
+6) What is promise chaining
