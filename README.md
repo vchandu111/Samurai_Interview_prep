@@ -90,3 +90,5 @@ D: undefined undefined
 4) What is the difference between == and === operators
 5) What is a promise , Why do you need a promise , What are the three states of promise
 6) What is promise chaining
+
+
