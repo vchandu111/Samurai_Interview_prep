@@ -100,4 +100,85 @@ D: undefined undefined
 5) What is a promise , Why do you need a promise , What are the three states of promise
 6) What is promise chaining
 
+# Day 5
+1) What's the output?
+```javascript
+const shape = {
+  radius: 10,
+  diameter() {
+    return this.radius * 2;
+  },
+  perimeter: () => 2 * Math.PI * this.radius,
+};
+
+console.log(shape.diameter());
+console.log(shape.perimeter());
+A: 20 and 62.83185307179586
+B: 20 and NaN
+C: 20 and 63
+D: NaN and 63
+```
+2) what is the Output?
+```javascript
++true;
+!'Lydia';
+A: 1 and false
+B: false and NaN
+C: false and false
+```
+3) what is the output ?
+```javascript
+class Chameleon {
+  static colorChange(newColor) {
+    this.newColor = newColor;
+    return this.newColor;
+  }
+
+  constructor({ newColor = 'green' } = {}) {
+    this.newColor = newColor;
+  }
+}
+
+const freddie = new Chameleon({ newColor: 'purple' });
+console.log(freddie.colorChange('orange'));
+A: orange
+B: purple
+C: green
+D: TypeError
+```
+4) what is the output ?
+```javascript
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const member = new Person('Lydia', 'Hallie');
+Person.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+console.log(member.getFullName());
+A: TypeError
+B: SyntaxError
+C: Lydia Hallie
+D: undefined undefined
+```
+5) what is the output?
+```javascript
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const lydia = new Person('Lydia', 'Hallie');
+const sarah = Person('Sarah', 'Smith');
+
+console.log(lydia);
+console.log(sarah);
+A: Person {firstName: "Lydia", lastName: "Hallie"} and undefined
+B: Person {firstName: "Lydia", lastName: "Hallie"} and Person {firstName: "Sarah", lastName: "Smith"}
+C: Person {firstName: "Lydia", lastName: "Hallie"} and {}
+D: Person {firstName: "Lydia", lastName: "Hallie"} and ReferenceError
+
 
